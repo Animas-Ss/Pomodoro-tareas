@@ -20,6 +20,8 @@ body
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  width: 100vw;
+  height: 100vh;
 }
 
 .App
@@ -31,8 +33,7 @@ body
   text-align: center;
   width: 400px;
   height: 600px;
-  padding: 50px;
-  margin: 90px;
+  padding: 30px;
   max-width: 340px;
 }
 
@@ -40,8 +41,8 @@ body
   content: '';
   position: absolute;
   top: 30px;
-  left: 0;
-  background: rgba(255, 255, 255, 0.4);
+  left: -200px;
+  background: rgba(255, 255, 255, 0.3);
   clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
   width: 170px;
   height: 150px;
@@ -69,27 +70,25 @@ button.with-text
 
 button.with-add
 {
-  width: 40px;
-  height: 40px;
+  width: auto;
   border-radius: 50%;
+  padding: 5px 5px;
   background-color: rgba(255, 255, 255, 0.1);
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: .5s ease-in;
+  font-size: 1em;
 }
 
 button.with-add svg{
   width: 35px;
   float: left;
-}
-button.with-add span{
- display: none;
+  transition: .5s ease-in;
 }
 
-button.with-add:hover{
-  width: 150px;
-  border-radius: 10px;
+
+button.with-add:hover svg{
+  transform: scale(1.2);
 }
 
 button.with-text svg{

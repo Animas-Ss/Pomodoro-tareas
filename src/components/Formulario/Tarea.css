@@ -1,0 +1,107 @@
+
+.btn-form
+{
+    width: auto;
+    padding: 10px 20px;
+    background: #6e5050;
+    border-radius: 10px;
+    font-size: 20px;
+}
+/*style de input formularios*/
+.form-completo
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 35px;
+  width: 100%;
+  height: 100%;
+}
+
+.box-input
+{
+    position: relative;
+    width: 250px;
+}
+
+.box-input input,
+.box-input textarea
+{
+    
+    width: 100%;
+    background: transparent;
+    color: #fff;
+    border: none;
+    border-radius: 0.6em;
+    outline: none;
+    box-shadow: none;
+    font-size: 1em;
+    letter-spacing: 0.1em;
+    padding: 10px 0 5px;
+}
+.box-input span
+{
+    position: absolute;
+    left: 0;
+    padding: 10px 0 5px;
+    color: rgba(255, 255, 255, 0.5);
+    text-transform: uppercase;
+    pointer-events: none;
+    letter-spacing: 0.1em;
+    transition: 0.5s;
+}
+
+.box-input input:valid ~ span,
+.box-input input:focus ~ span,
+.box-input textarea:valid ~ span,
+.box-input textarea:focus ~ span
+{
+    color: rgba(255, 255, 255, 0.5);
+    left: 0;
+    transform: translateY(-30px);
+    font-size: 0.65em;
+}
+
+.box-input i
+{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    border-radius: 0.5em;
+    background: rgba(255, 255, 255, 0.5);
+    overflow: hidden;
+}
+
+.box-input i::before
+{
+    content: '';
+    position: absolute;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, #0d0c0d, #ff1b69, #fafafa, #0d0c0d);
+    animation: lineas 2s linear infinite;
+    transition: 0.5s;
+}
+
+.box-input input:valid ~ i::before,
+.box-input input:focus ~ i::before,
+.box-input textarea:valid ~ i::before,
+.box-input textarea:focus ~ i::before
+{
+    left: 0;
+}
+
+@keyframes lineas{
+    0%
+    {
+      background-position-x: 0;
+    }
+    100%
+    {
+      background-position-x: 250px;
+    }
+  }

@@ -87,8 +87,8 @@ function Tiempo() {
         <div style={{marginTop: '20px'}}>
           <SettingsButton onClick={()=> settingsInfo.setShowSettings(!settingsInfo.showSettings)} />
         </div>
-        <div style={{position: 'absolute', bottom: '10px', left: '10px'}}>
-          <AddButton/>
+        <div style={{position: 'absolute', bottom: '20px', left: '10px'}}>
+          <AddButton onClick={()=>settingsInfo.setShowForm(!settingsInfo.showForm) }/>
         </div>
     </div>
   )
