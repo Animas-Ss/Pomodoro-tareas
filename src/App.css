@@ -1,0 +1,104 @@
+:root
+{
+  --red: #f54e4e;
+  --green: #4aec8c;
+}
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body
+{
+  background: #30384b;
+  color: #eee;
+}
+.container
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.App
+{
+  position: relative;
+  border: 6px solid #30384b;
+  border-radius: 20px;
+  box-shadow: -8px -8px 15px rgba(0, 0, 0, 1), 8px 8px 25px rgba(255, 255, 255, 0.15), inset 3px 3px 10px rgba(255, 255, 255, 0.1), inset -4px -4px 15px rgba(0, 0, 0, 1);
+  text-align: center;
+  width: 400px;
+  height: 600px;
+  padding: 50px;
+  margin: 90px;
+  max-width: 340px;
+}
+
+.App::before{
+  content: '';
+  position: absolute;
+  top: 30px;
+  left: 0;
+  background: rgba(255, 255, 255, 0.4);
+  clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+  width: 170px;
+  height: 150px;
+}
+
+button
+{
+  background-color: transparent;
+  color: rgba(255, 255, 255, 0.8);
+  border: 0;
+  display: inline-block;
+  width: 100px;
+  cursor: pointer;
+}
+
+button.with-text
+{
+  width: auto;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  padding: 10px 20px;
+  font-size: 1.4rem;
+  line-height: 36px;
+}
+
+button.with-add
+{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: .5s ease-in;
+}
+
+button.with-add svg{
+  width: 35px;
+  float: left;
+}
+button.with-add span{
+ display: none;
+}
+
+button.with-add:hover{
+  width: 150px;
+  border-radius: 10px;
+}
+
+button.with-text svg{
+  width: 36px;
+  float: left;
+  margin-right: 5px;
+}
+
+label{
+  display: block;
+  margin-bottom: 10px;
+}
