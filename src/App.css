@@ -37,6 +37,8 @@ body
   max-width: 340px;
 }
 
+
+
 .App::before{
   content: '';
   position: absolute;

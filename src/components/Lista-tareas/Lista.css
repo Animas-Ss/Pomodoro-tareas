@@ -1,0 +1,42 @@
+.lista-tareas
+{
+  margin-left: 20px;
+  width: 900px;
+  height: 600px;
+  border-radius: 20px;
+  border: 6px solid #30384b;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.tarea-realizada
+{
+  width: 200px;
+  height: 290px;
+  margin: 0px 15px 0px 0px;
+  border: 1px solid #fff;
+  border-radius: 10px;
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.4) 20%, rgba(255, 255, 255, 0.5) 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.tarea-realizada-frente
+{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: red;
+}
+.tarea-realizada-frente::before
+{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background: blue;
+}

@@ -4,6 +4,7 @@ import SettingsContext from './components/Contexto/SettingsContext';
 import Tiempo from './components/Tiempo';
 import Tarea from './components/Formulario/Tarea';
 import { useState } from 'react';
+import { Lista } from './components/Lista-tareas/Lista';
 
 
 function App() {
@@ -22,7 +23,6 @@ function App() {
   return (
     <>
       <div className='container'>
-        <div className="App">
           <SettingsContext.Provider value={{
             showSettings: showSettings,
             setShowSettings,
@@ -35,9 +35,11 @@ function App() {
             tareas: tareas,
             setTareas
           }}>
-            {showSettings ? <Settings /> : showForm ? <Tarea/> : <Tiempo />}  
-          </SettingsContext.Provider>
+        <div className="App">
+            {showSettings ? <Settings /> : showForm ? <Tarea/> : <Tiempo />}
         </div>
+            <Lista/>  
+          </SettingsContext.Provider>
       </div>
     </>
   );
