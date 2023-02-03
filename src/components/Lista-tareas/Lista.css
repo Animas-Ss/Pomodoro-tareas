@@ -27,7 +27,7 @@
 }
 .tarea-realizada-frente
 {
-  background: url("https://www.jardineriaon.com/wp-content/uploads/2020/11/paisajes-1024x554.jpg.webp");
+  background: url("https://i.pinimg.com/originals/27/de/41/27de41a3e9c8817e333ac408406750b9.gif");
   border-radius: 10px;
   background-size: cover;
   background-position: center;
@@ -59,7 +59,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #fff;
+  flex-direction: column;
+  color: #111;
   transform: translateZ(60px);
 }
 
