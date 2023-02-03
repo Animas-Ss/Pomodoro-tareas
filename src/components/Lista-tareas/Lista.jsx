@@ -9,11 +9,11 @@ export const Lista = () => {
     return (
         <div className='lista-tareas'>
             {settingsInfo.tareas.map((tarea) => (
-                <div className='tarea-padre'>
+            <div className='tarea-padre'>
                     <div className='tarea-realizada'>
                         <div className='tarea-realizada-frente'>
                             <div className='frente-contenido'>
-                                <h4>{tarea.tarea}</h4>
+                                <h2>{tarea.tarea}</h2>
                             </div>
                         </div>
                         <div className='tarea-realizada-atras'>
@@ -24,7 +24,7 @@ export const Lista = () => {
                             </div>
                         </div>
                     </div>
-                </div>
+            </div>
             ))}
         </div>
     )
